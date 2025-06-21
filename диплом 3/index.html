@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fast Courier – Быстрая доставка</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <img src="pages\logo.png" alt="Логотип Fast Courier" class="logo">
+  </div>
+</header>
+  <header class="main-header">
+    <div class="container">
+      <div class="logo">Fast Courier</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="pages/rates.html">Тарифы</a></li>
+          <li><a href="pages/track.html">Отслеживание</a></li>
+          <li><a href="pages/contact.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container">
+      <h1>Быстрая и надежная доставка по городу и области</h1>
+      <p>Экспресс-доставка, отслеживание посылок, доступные цены. Мы доставим – быстро и с гарантией!</p>
+      <a href="pages\order.html" class="btn">Оформить заказ</a>
+    </div>
+  </section>
+<section id="services" class="services">
+  <div class="container">
+    <h2>Наши Услуги</h2>
+    <div class="service-card">
+      <h3>Экспресс-доставка</h3>
+      <p>Быстрая доставка товаров в пределах города в течение нескольких часов.</p>
+    </div>
+    <div class="service-card">
+      <h3>Доставка документов</h3>
+      <p>Профессиональная доставка важных документов с гарантией безопасности.</p>
+    </div>
+    <div class="service-card">
+      <h3>Междугородняя доставка</h3>
+      <p>Доставка грузов и посылок между городами с гарантией точности и скорости.</p>
+    </div>
+  </div>
+</section>
+  <section class="advantages">
+    <div class="container">
+      <h2>Наши преимущества</h2>
+      <div class="advantage-list">
+        <div class="advantage-item">⚡ Быстрая доставка</div>
+        <div class="advantage-item">📦 Отслеживание посылки</div>
+        <div class="advantage-item">💰 Доступные цены</div>
+        <div class="advantage-item">📄 Доставка документов и грузов</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="calculator">
+    <div class="container">
+      <h2>Рассчитать стоимость</h2>
+      <form class="calc-form" onsubmit="calculatePrice(event)">
+        <input type="text" placeholder="Откуда" id="from" required/>
+        <input type="text" placeholder="Куда" id="to" required/>
+        <input type="number" placeholder="Вес (кг)" id="weight" required/>
+        <button type="submit" class="btn">Рассчитать</button>
+      </form>
+      <p id="result"></p>
+    </div>
+  </section>
+   <style>
+       .map-container {
+           border: 2px solid #ccc;
+           border-radius: 10px;
+           overflow: hidden;
+           box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+       }
+   </style>
+   <div class="map-container">
+       <iframe width= 100%; height="300" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1349.2024217649562!2d45.126079237743625!3d54.17001523476112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4144061a2b2f8c91%3A0xb9cf47f7408b682!2z0YPQuy4g0K3QvdCz0LXQu9GM0YHQsCwg0KHQsNGA0LDQvdGB0LosINCg0LXRgdC_LiDQnNC-0YDQtNC-0LLQuNGPLCA0MzAwMzI!5e0!3m2!1sru!2sru!4v1748548593851!5m2!1sru!2sru" 
+width="600" 
+height="450" 
+style="border:0;" 
+allowfullscreen="" 
+loading="lazy" 
+referrerpolicy="no-referrer-when-downgrade">
+</iframe>>
+   </div>
+
+  </div>
+  </div>
+
+<div class="testimonial-section" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
+  
+  <div class="vemotau-vokusipol" style="background: #ffffff; padding: 10px; border-radius: 10px; max-width: 250px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+    <div class="testimonial">
+      <img src="pages\ava1.png" alt="" style="width: 100%; border-radius: 8px;">
+      <div class="gecedanam" style="font-weight: bold; margin-top: 10px;">Анна Петрова</div>
+      <div class="apogered-gselected" style="color: gold;">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <p>Очень быстрая доставка и приятный курьер. Спасибо!</p>
+    </div>
+  </div>
+
+  <div class="vemotau-vokusipol" style="background: #ffffff; padding: 10px; border-radius: 10px; max-width: 250px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+    <div class="testimonial">
+      <img src="pages\ava2.png" alt="" style="width: 100%; border-radius: 8px;">
+      <div class="gecedanam" style="font-weight: bold; margin-top: 10px;">Дмитрий Атрохов</div>
+      <div class="apogered-gselected" style="color: gold;">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+      </div>
+      <p>Посылка немного задержалась, поэтому три звезды.</p>
+    </div>
+  </div>
+
+  <div class="vemotau-vokusipol" style="background: #ffffff; padding: 10px; border-radius: 10px; max-width: 250px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+    <div class="testimonial">
+      <img src="pages\ava4.png" alt="" style="width: 100%; border-radius: 8px;">
+      <div class="gecedanam" style="font-weight: bold; margin-top: 10px;">Каспер Волков</div>
+      <div class="apogered-gselected" style="color: gold;">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+      </div>
+      <p>Отличный сайт. Посылка пришла вовремя.</p>
+    </div>
+  </div>
+
+</div>
+<footer>
+  <div class="container">
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="pages/contact.html">Контакты</a></li>
+    </ul>
+    <p>&copy; 2025 Fast Courier | Все права защищены</p>
+  </div>
+</footer>
+</body>
+</html>
