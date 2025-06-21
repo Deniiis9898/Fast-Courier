@@ -1,0 +1,278 @@
+﻿
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+h1, h2, h3 {
+  margin: 0 0 20px;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+
+.main-header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.main-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: #555;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Карточки услуг */
+.cards-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  margin: 10px 0;
+  color: #007bff;
+}
+
+.card ul {
+  list-style: disc inside;
+  padding-left: 0;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.faq-block {
+  margin-top: 60px;
+  background: #f1f7ff;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.faq-block h2 {
+  color: #007bff;
+}
+
+.faq-block ul {
+  list-style: none;
+  padding: 0;
+}
+
+.faq-block li {
+  margin-bottom: 15px;
+}
+
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.services {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.services .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.services h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.service-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-card h3 {
+  font-size: 24px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  font-size: 16px;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .service-card {
+    margin: 20px 0;
+  }
+}
+.koguvcavis-varazdel {
+  padding: 38px 0;
+  background: #adadad;
+  color: #2f2f2f;
+  text-align: center;
+}
+.sestim-donials{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.sectionesag {
+  width: 195px;
+  height: 3px;
+  background: #498a2d;
+  margin: 23px auto;
+}
+
+.sagestim-lonials{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.testimonial {
+  background: #f9f4f4;
+  padding: 28px;
+}
+.testimonial img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.gecedanam{
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.apogered-gselected{
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width:960px) {
+.vemotau-vokusipol{
+  flex: 100%;
+  max-width: 80%;
+}
+}
+
+@media screen and (max-width:600px) {
+.vemotau-vokusipol{
+  flex: 100%;
+  max-width: 100%;
+}
+}
+.site-header {
+  background-color: #f8f8f8;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.site-header .logo {
+  height: 60px; 
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+}
